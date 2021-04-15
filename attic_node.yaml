@@ -21,9 +21,9 @@ sensor:
   - platform: ultrasonic
     unit_of_measurement: '%'
     accuracy_decimals: 0
-    trigger_pin: D1
-    echo_pin: D2
+    trigger_pin: D1 #trigger pin of the ultrasonic sensor
+    echo_pin: D2 #echo pin of the ultrasonic sensor
     name: "Tank Water Level"
     update_interval: 10s
     filters:
-    - lambda: return (115-(x * 140)); #expression that converts distance to % 
+    - lambda: return (0.9(120- (X*100))); #expression that converts distance to %. Refer readme.
