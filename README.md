@@ -1,4 +1,4 @@
-# espome-waterlevel
+# esphome-waterlevel
 A water level monitoring system for homeassitant using esphome and ultrasonic sensor.
 
 ![calculate-2](https://user-images.githubusercontent.com/61015809/114900443-7f399b80-9e31-11eb-833e-3b0cfbc1038f.png)
