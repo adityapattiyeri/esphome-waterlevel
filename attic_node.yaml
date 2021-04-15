@@ -1,0 +1,29 @@
+esphome:
+  name: attic_node
+  platform: ESP8266
+  board: nodemcuv2
+
+wifi:
+  ssid: #yourssid
+  password: #yourpasword
+  power_save_mode: NONE
+  fast_connect: TRUE
+  ap:
+    ssid: "Attic Node Fallback Hotspot"
+    password: "12345678"
+
+captive_portal:
+logger:
+api:
+ota:
+
+sensor:
+  - platform: ultrasonic
+    unit_of_measurement: '%'
+    accuracy_decimals: 0
+    trigger_pin: D1
+    echo_pin: D2
+    name: "Tank Water Level"
+    update_interval: 10s
+    filters:
+    - lambda: return (115-(x * 140)); #expression that converts distance to % 
