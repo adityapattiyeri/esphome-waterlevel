@@ -4,7 +4,6 @@ A water level monitoring system for homeassitant using esphome and ultrasonic se
 ![calculate-2](https://user-images.githubusercontent.com/61015809/114900443-7f399b80-9e31-11eb-833e-3b0cfbc1038f.png)
 
 Measure the following:
-
 MAX --> Distance from sensor to the max water level in CM
 MIN --> Distance from sensor to min water level in CM
 
@@ -13,6 +12,8 @@ M= 100/(MIN-MAX)
 
 Expression:
 M(MIN - (X*100))
+
+
 
 Example:
 Say MAX is 10 and MIN is 120
