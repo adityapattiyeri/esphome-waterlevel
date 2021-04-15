@@ -16,7 +16,7 @@ M(MIN - (X*100))
 
 
 Example:
-Say MAX is 10 and MIN is 120
+Say MAX is 10cm and MIN is 120cm
 
 M= 100/(120-10) = 0.9
 
