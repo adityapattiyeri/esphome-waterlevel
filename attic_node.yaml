@@ -26,4 +26,4 @@ sensor:
     name: "Tank Water Level"
     update_interval: 10s
     filters:
-    - lambda: return (0.9(120- (X*100))); #expression that converts distance to %. Refer readme.
+    - lambda: return (0.9 * (120- (X * 100))); #expression that converts distance to %. Refer readme.
